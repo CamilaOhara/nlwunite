@@ -1,0 +1,141 @@
+/*seletor universal, para todos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*criando variavel no css*/
+  :root {
+    --border: 1px solid #ffffff1a;
+  }
+  
+  body, table, input, button {
+    font: 300 16px/140% 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #121214;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 690px; /*largura maxima*/
+    margin: 0 auto;
+    padding: 20px 32px;
+  }
+  
+  header {
+    padding: 20px 0; /* 20px todos os cantos, 0 na horizontal não tem o padding*/
+  }
+  
+  form {
+    border: var(--border); /*borda nos 4 cantos*/
+    border-inline: none; /*bordas horizontais*/
+    padding: 20px 0;
+  }
+  
+  fieldset {
+    border: none;
+    
+  }
+  
+  fieldset > div /*pega os 1°s seletores de div*/{
+    display: flex; /*apresentação do conteúdo, grid deixa todos um em baixo do outro e o flex um do lado do outro*/
+    gap: 12px; /*espaço entre elementos*/
+    
+  }
+  
+  /*classe, seletor de classe*/
+  .input-wrapper {
+    flex: 1;
+  
+    display: flex;
+    align-items: center; /*alinhou os itens da logo do nome e do logo do email e das escritas do lado*/
+    gap: 12px;
+  
+    border: var(--border);
+    border-radius: 10px; /*arredondamento de bordas*/
+  
+    padding: 8px /*em cima e em baixo*/ 12px; /*laterais*/
+  
+    font: 400 14px/150% 'Roboto', sans-serif;
+    color: #C4C4CC;
+  }
+  
+  input {
+    all: unset;
+  }
+  
+  fieldset legend, section h2 {
+    font: 700 16px/140% 'Roboto', sans-serif;
+    color: #E1E1E6;
+    padding-bottom: 16px;
+  }
+  
+  fieldset button {
+    width: fit-content;
+    border: 0;
+    background: #F48F56;
+    border-radius: 10px;
+    padding: 7px 20px;
+  
+    font: 700 12px/24px 'Roboto', sans-serif;
+    color: #00292E;
+  }
+  
+  fieldset button:hover {
+    background: #F37C37;
+  }
+  
+  .lista-participantes {
+    padding: 20px 0;
+  }
+  
+  .lista-participantes > div {
+    border: var(--border);
+    border-radius: 8px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  table thead {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 12px, 16px;
+  }
+  
+  tbody td {
+    border-top: var(--border);
+    font-size: 13px;
+    line-height: 15px;
+    color: #c4c4cc;
+  }
+  
+  tbody td strong {
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+  
+  tbody td small {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  tbody td button {
+    all: unset;
+    color: #9FF9CC;
+  }
+  
+  tbody td button:hover {
+    text-decoration: underline;
+  }
+  
